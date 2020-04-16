@@ -8,15 +8,5 @@
 </head>
 <body>
 
-	<form action = "addProductA">
-		<input type = "text" name=id>
-		<input type = "text" name=title>
-		<input type = "text" name=manufacturer>
-		<input type = "text" name=price>
-		
-		<input type = "submit">
-		</form>
-
-
 </body>
 </html>
