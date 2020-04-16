@@ -1,5 +1,7 @@
 package com.example.Store.auth.services;
 
-public class SecurityService {
+public interface SecurityService {
+    String findLoggedInUsername();
 
+    void autoLogin(String username, String password);
 }
