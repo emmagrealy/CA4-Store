@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.Store.auth.model.User;
+import com.example.Store.auth.model.Customer;
 import com.example.Store.auth.services.SecurityService;
 import com.example.Store.auth.services.UserService;
 import com.example.Store.auth.validator.UserValidator;
@@ -24,13 +24,13 @@ public class UserController {
 
     @GetMapping("/registration")
     public String registration(Model model) {
-        model.addAttribute("userForm", new User());
+        model.addAttribute("userForm", new Customer());
 
         return "registration";
     }
 
     @PostMapping("/registration")
-    public String registration(@ModelAttribute("userForm") User userForm, BindingResult bindingResult) {
+    public String registration(@ModelAttribute("userForm") Customer userForm, BindingResult bindingResult) {
         userValidator.validate(userForm, bindingResult);
 
         if (bindingResult.hasErrors()) {
@@ -59,4 +59,5 @@ public class UserController {
     public String welcome(Model model) {
         return "welcome";
     }
+    
 }

@@ -4,8 +4,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "user")
-public class User {
+public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -18,7 +17,7 @@ public class User {
     private String passwordConfirm;
 
     @ManyToMany
-    private Set<Role> roles;
+    private Set<Positions> positions;
 
     public Long getId() {
         return id;
@@ -52,11 +51,11 @@ public class User {
         this.passwordConfirm = passwordConfirm;
     }
 
-    public Set<Role> getRoles() {
-        return roles;
+    public Set<Positions> getPositions() {
+        return positions;
     }
 
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
+    public void setPositions(Set<Positions> positions) {
+        this.positions = positions;
     }
 }

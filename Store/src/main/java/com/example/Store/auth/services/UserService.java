@@ -1,9 +1,9 @@
 package com.example.Store.auth.services;
 
-import com.example.Store.auth.model.User;
+import com.example.Store.auth.model.Customer;
 
 public interface UserService {
-    void save(User user);
+    void save(Customer user);
 
-    User findByUsername(String username);
+    Customer findByUsername(String username);
 }
