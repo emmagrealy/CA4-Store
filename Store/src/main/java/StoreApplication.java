@@ -1,12 +1,15 @@
-package com.example.Store;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
+import com.example.Store.auth.web.UserController;
+
+
 
 @SpringBootApplication
-@ComponentScan(basePackages={"com.example.Store"})
+@ComponentScan(basePackageClasses= UserController.class)
 public class StoreApplication {
 
 	public static void main(String[] args) {
