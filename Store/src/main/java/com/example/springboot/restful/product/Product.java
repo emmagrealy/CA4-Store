@@ -1,4 +1,4 @@
-package com.hellokoding.springboot.restful.product;
+package com.example.springboot.restful.product;
 
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;

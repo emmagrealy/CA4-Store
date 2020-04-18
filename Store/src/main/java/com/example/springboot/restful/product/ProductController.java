@@ -1,4 +1,4 @@
-package com.hellokoding.springboot.restful.product;
+package com.example.springboot.restful.product;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
